@@ -68,15 +68,6 @@ def count_keywords(article, keywords):
     keyword_count = len(keyword_set)
 
     return keyword_count
-    """keyword_count = 0
-    keyword_set = set()
-    
-    for keyword in keywords:
-        if keyword in article and keyword not in keyword_set:
-            keyword_count += len(re.findall(r'\b' + re.escape(keyword) + r'\b', article))
-            keyword_set.add(keyword)
-    
-    return keyword_count"""
 
 def find_top_articles(filtered_news, keywords, top_n=3):
     news_with_keyword_count = []
